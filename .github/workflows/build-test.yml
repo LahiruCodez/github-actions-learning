@@ -3,6 +3,9 @@ name: Build and Test
 on:
   push:
     branches: [test]
+    paths:
+      - 'sample-app/**'
+      - '.github/workflows/build-test.yml'
   pull_request:
     branches: [test]
   workflow_dispatch:
